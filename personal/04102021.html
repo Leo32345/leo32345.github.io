@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+<script src="https://www.cssscript.com/demo/confetti-falling-animation/confetti.js"></script>
+</head>
+<title>Dear Carrie, Happy Birthday!</title>
+<style>
+body {
+font-family: 'Happy Monkey', cursive;
+background-color:#101010;
+color:#F5F5F5;
+overflow: hidden;
+}
+#two {
+font-size:50px;
+color:#e34285;
+}
+#abc {
+padding: 15px;
+border-radius:15px;
+background-color:#303030;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align:center;
+width:75%;
+}
+.hidden {
+display:none;
+}
+.textShineBlack {
+background: linear-gradient(to right, #e34285 20%, #FFFDD0 30%, #FFFDD0 70%, #e34285 80%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+background-size: 200% auto;
+animation: textShine 5s ease-in-out infinite alternate;
+}
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+</style>
+</head>
+<body onload="main();"><div id="abc">
+<h1>
+<p id="one" class="animate__animated animate__fadeInDown">Dear Carrie,</p>
+<p id="two" class="animate__animated animate__zoomInDown animate__delay-1s">Happy Birthday!</p>
+<p class="animate__animated animate__fadeIn animate__delay-3s">I wish you a great birthday! May your wishes come true!</p>
+<p class="animate__animated animate__flipInX animate__delay-5s">Sincerely,<br>Leo</p></h1></div>
 
+<script>
+function main() {
+setTimeout(function(){
+var two =  document.getElementById("two")
+two.classList.remove("hidden");
+two.classList.remove("animate__zoomInDown");
+two.classList.add("textShineBlack");
+setTimeout(function(){
+startConfetti();
+}, 3500); 
+}, 2500); 
+}
+</script>
+</body>
+</html>
