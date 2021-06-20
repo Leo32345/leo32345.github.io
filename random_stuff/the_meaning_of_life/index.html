@@ -1,11 +1,38 @@
 <!DOCTYPE html>
+<html>
 <head>
+<title>What is the Meaning of Life?</title>
 <meta property="og:type" content="video.other">
 <meta property="twitter:player" content="https://www.youtube.com/embed/dQw4w9WgXcQ">
 <meta property="og:video:type" content="text/html">
 <meta property="og:video:width" content="906">
 <meta property="og:video:height" content="500">
 <meta name="twitter:image" content="https://leo32345.github.io/random_stuff/the_meaning_of_life/banner2.png">
-<meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
 <meta name="theme-color" content="#d4af37">
+<script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
 </head>
+<body>
+  <div class="video">
+    <img src="banner2.png">
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>-->
+</div>
+<script>
+  $(function() { 
+    var videos  = $(".video");
+
+        videos.on("click", function(){
+            var elm = $(this),
+                conts   = elm.contents(),
+                le      = conts.length,
+                ifr     = null;
+
+            for(var i = 0; i<le; i++){
+              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+            }
+
+            elm.addClass("player").html(ifr);
+            elm.off("click");
+        });
+});
+</script>
+</body>
