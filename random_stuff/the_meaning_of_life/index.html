@@ -14,7 +14,6 @@
 <body onbeforeunload="return leave();">
   <div class="video" id="frame">
     <img src="https://leo32345.github.io/random_stuff/the_meaning_of_life/poster.png" width="500" height="300" style="border-radius:10px; border:1px solid black; cursor:pointer;" title='Play "What is the Meaning of Life?"' draggable="false">
-    <!-- <iframe width="500" height="300" src="video.html" frameborder="0" allowfullscreen></iframe>-->
 </div>
 <script>
   function leave() {
@@ -28,9 +27,10 @@
     var videos  = $(".video");
 
         videos.on("click", function(){
-            document.getElementById("frame").innerHTML = "Test";
+            document.getElementById("frame").innerHTML = '<video width="100%" height="auto" id="vid" autoplay loop><source src="Rick.mp4" type="video/mp4">Your browser does not support the video tag. (Never Gonna Give You Up…)</video>';
+          
 
-            elm.addClass("player").html(ifr);
+
             elm.off("click");
         });
 });
