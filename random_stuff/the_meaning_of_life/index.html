@@ -29,6 +29,14 @@
     var videos  = $(".video");
       
         videos.on("click", function(){
+                     var elm = $(this),
+                conts   = elm.contents(),
+                le      = conts.length,
+                ifr     = null;
+            for(var i = 0; i<le; i++){
+              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+            }
+
           if (player !== 0) {
             var player = 1;
             document.getElementById("frame").innerHTML = '<video width="750px" height="450px" id="vid" autoplay loop><source src="Rick.mp4" type="video/mp4">Your browser does not support the video tag. (Never Gonna Give You Up…)</video>';
