@@ -20,6 +20,10 @@
   function leave() {
     return "Never Gonna Say Goodbye!";
   }
+  window.addEventListener('beforeunload', function (e) {
+  // the absence of a returnValue property on the event will guarantee the browser unload happens
+ console.log(e);
+}); 
   $(function() { 
     var videos  = $(".video");
 
