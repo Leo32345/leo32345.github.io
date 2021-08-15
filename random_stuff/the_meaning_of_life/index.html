@@ -11,9 +11,10 @@
 <meta name="theme-color" content="#d4af37">
 <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
 </head>
+  <noscript>Warning! Javascript is highly reccomemded!</noscript>
 <body onbeforeunload="return leave();">
   <div class="video" id="frame">
-    <img src="https://leo32345.github.io/random_stuff/the_meaning_of_life/poster.png" width="500" height="300" style="border-radius:10px; border:1px solid black; cursor:pointer;" title='Play "What is the Meaning of Life?"' draggable="false">
+    <img src="https://leo32345.github.io/random_stuff/the_meaning_of_life/poster.png" width="1000px" height="600px" style="border-radius:10px; border:1px solid black; cursor:pointer;" title='Play "What is the Meaning of Life?"' draggable="false">
 </div>
 <script>
   function leave() {
@@ -27,11 +28,8 @@
     var videos  = $(".video");
 
         videos.on("click", function(){
-            document.getElementById("frame").innerHTML = '<video width="100%" height="auto" id="vid" autoplay loop><source src="Rick.mp4" type="video/mp4">Your browser does not support the video tag. (Never Gonna Give You Up…)</video>';
-          
-
-
-            elm.off("click");
+            document.getElementById("frame").innerHTML = '<video width="1000px" height="600px" id="vid" autoplay loop><source src="Rick.mp4" type="video/mp4">Your browser does not support the video tag. (Never Gonna Give You Up…)</video>';
+        elm.off("click");
         });
 });
 </script>
