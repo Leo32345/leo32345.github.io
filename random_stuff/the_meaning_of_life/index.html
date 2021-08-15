@@ -12,7 +12,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
 </head>
 <body onbeforeunload="return leave();">
-  <div class="video">
+  <div class="video" id="frame">
     <img src="https://leo32345.github.io/random_stuff/the_meaning_of_life/poster.png" width="500" height="300" style="border-radius:10px; border:1px solid black; cursor:pointer;" title='Play "What is the Meaning of Life?"' draggable="false">
     <!-- <iframe width="500" height="300" src="video.html" frameborder="0" allowfullscreen></iframe>-->
 </div>
@@ -28,14 +28,7 @@
     var videos  = $(".video");
 
         videos.on("click", function(){
-            var elm = $(this),
-                conts   = elm.contents(),
-                le      = conts.length,
-                ifr     = null;
-
-            for(var i = 0; i<le; i++){
-              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
-            }
+            document.getElementById("frame").innerHTML = "Test";
 
             elm.addClass("player").html(ifr);
             elm.off("click");
