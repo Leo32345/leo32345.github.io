@@ -16,6 +16,10 @@
   <div class="video" style="background-color:black; width:750px; height:450px; margin:0; border-radius:10px;" id="frame">
     <img src="https://leo32345.github.io/random_stuff/the_meaning_of_life/poster.png" width="750px" height="450px" style="border-radius:10px; border:1px solid black; cursor:pointer;" title='Play "What is the Meaning of Life?"' draggable="false">
 </div>
+ <div id="contextMenu" class="context-menu" style="display:none; font-family:arial; width:200px; height:250px;">
+    <h3>Congratulations on being Rickrolled!</h3>
+    <a href="https://github.com/Leo32345/leo32345.github.io/edit/main/random_stuff/the_meaning_of_life" target="_blank">View this on Github</a>
+  </div>
 <script>
   var player = 0;
   function leave() {
@@ -47,6 +51,30 @@
             
         });
 });
+
+  document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
 </script>
 </body>
 </html>
