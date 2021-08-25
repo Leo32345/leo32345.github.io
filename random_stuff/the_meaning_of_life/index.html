@@ -22,7 +22,7 @@
   </div>
 <script>
   var player = 0;
-  var menu;
+  var menu1;
   function leave() {
     return "Never Gonna Say Goodbye!";
   }
@@ -38,7 +38,7 @@
                 conts   = elm.contents(),
                 le      = conts.length,
                 ifr     = null;
-          menu = 1;
+          menu1 = 1;
             for(var i = 0; i<le; i++){
               if(conts[i].nodeType == 8) ifr = conts[i].textContent;
             }
@@ -68,7 +68,7 @@
             if (document.getElementById("contextMenu").style.display == "block")
                 hideMenu();
             else {
-              if (menu == 1) {
+              if (menu1 == 1) {
                 var menu = document.getElementById("contextMenu")
                       
                 menu.style.display = 'block';
