@@ -1,7 +1,6 @@
 # This is a short video about the meaning of life.
 Thanks to https://f.uint.dev/howtotroll.mp4 for the inspriation. Please share with your friends.
-### [View this on the Web](https://leo32345.github.io/random_stuff/the_meaning_of_life)
-##### [See page anylitics](https://app.splitbee.io/public/leo32345.github.io)
+### [View this on the Web](https://leo32345.github.io/random_stuff/the_meaning_of_life) [See page anylitics](https://app.splitbee.io/public/leo32345.github.io)
 
 ### What's New in v2.0:
 * Bigger video frame on the webpage.
