@@ -25,8 +25,8 @@
   <hr>
    <h3>Do you like this video?</h3>
 <div id="poll">
-<button name="Yes" data-splitbee-event="Video Like Poll" data-splitbee-event-type="Yes">Yes</button>
-<button name="No" data-splitbee-event="Video Like Poll" data-splitbee-event-type="No">No</button>
+<button name="Yes" data-splitbee-event="Video Like Poll" data-splitbee-event-type="Yes" onclick="message();">Yes</button>
+<button name="No" data-splitbee-event="Video Like Poll" data-splitbee-event-type="No" onclick="message();">No</button>
   </div>
 <script>
 let baseStyles = [
@@ -98,11 +98,6 @@ console.log("%cWe're no strangers to love\nYou know the rules and so do I\nA ful
 
 function message() {
 document.getElementById("poll").innerHTML = "Thanks for your feedback!";
-}
-document.querySelectorAll("button").forEach(div => 
-    div.onclick = (e) => {
-        message();
-    }
 }
 </script>
 </body>
