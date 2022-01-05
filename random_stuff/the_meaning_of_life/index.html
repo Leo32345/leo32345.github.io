@@ -11,6 +11,7 @@
 <meta name="twitter:image" content="https://leo32345.github.io/random_stuff/the_meaning_of_life/banner2.png">
 <meta name="theme-color" content="#d4af37">
 <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+<link rel="preload" href="Rick.mp4" as="video">
 </head>
 <noscript>Warning! Javascript is highly reccomemded!</noscript>
 <body onbeforeunload="return leave();">
@@ -23,9 +24,21 @@
   </div>
   <hr>
    <h3>Do you like this video?</h3>
+<div id="poll">
 <button name="Yes" data-splitbee-event="Video Like Poll" data-splitbee-event-type="Yes">Yes</button>
 <button name="No" data-splitbee-event="Video Like Poll" data-splitbee-event-type="No">No</button>
+  </div>
 <script>
+let baseStyles = [
+  "color: #fff",
+  "background-color: #444",
+  "padding: 2px 4px",
+  "font-size: 21px",
+  "font-family: helvetica",
+  "border-radius: 2px"
+].join(";");
+
+console.log("%cWe're no strangers to love\nYou know the rules and so do I\nA full commitment's what I'm thinking of\nYou wouldn't get this stuff from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\n\nlol", baseStyles);
   var player = 0;
   var menu1;
   function leave() {
@@ -82,6 +95,11 @@
               }
             }
         }
+
+function message() {
+document.getElementById("poll").innerHTML = "Thanks for your feedback!";
+}
+document.querySelector("button").onclick(message());
 </script>
 </body>
 </html>
