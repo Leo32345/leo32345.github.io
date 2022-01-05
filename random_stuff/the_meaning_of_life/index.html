@@ -99,7 +99,11 @@ console.log("%cWe're no strangers to love\nYou know the rules and so do I\nA ful
 function message() {
 document.getElementById("poll").innerHTML = "Thanks for your feedback!";
 }
-document.querySelector("button").onclick(message());
+contPartie.querySelectorAll("button").forEach(div => 
+    div.onclick = (e) => {
+        message();
+    }
+}
 </script>
 </body>
 </html>
