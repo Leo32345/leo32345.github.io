@@ -6,6 +6,7 @@ Thanks to https://f.uint.dev/howtotroll.mp4 for the inspriation. Please share wi
 ### What's New in v3.0:
 * Captions - thanks to https://www.captionfy.io/user/Erasmus_Magnus.
 * Sending feedback now gives an indication that the button was pressed.
+* Part of Never Gonna Give You Up lyrics can now be viewed in the Devtools console.
 
 ### What's New in v2.0:
 * Bigger video frame on the webpage.
