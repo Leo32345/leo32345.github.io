@@ -2,6 +2,7 @@
 Thanks to https://f.uint.dev/howtotroll.mp4 for the inspriation. Please share with your friends.
 ### [View this on the Web](https://leo32345.github.io/random_stuff/the_meaning_of_life) • [See page anylitics](https://app.splitbee.io/public/leo32345.github.io)
 
+#### Chat with us! You can create a discussion [here](https://github.com/Leo32345/leo32345.github.io/discussions).
 
 ### What's New in v3.0:
 * Captions - thanks to https://www.captionfy.io/user/Erasmus_Magnus.
